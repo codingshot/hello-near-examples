@@ -2,6 +2,7 @@ name: Tests Contract TS
 on: push
 jobs:
   workflows:
+    timeout-minutes: 60
     strategy:
       matrix:
         platform: [ubuntu-latest, macos-latest]
